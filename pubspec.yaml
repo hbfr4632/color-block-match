@@ -1,0 +1,51 @@
+name: color_block_match
+description: A lightweight, highly addictive 2D grid puzzle game built with Flutter. Fully publishable to Google Play Store and Apple App Store.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  provider: ^6.0.0
+  
+  # Local Storage
+  shared_preferences: ^2.2.0
+  
+  # UI/Animations
+  google_fonts: ^6.0.0
+  
+  # Logging & Debug
+  logger: ^2.0.0
+  
+  # AdMob Integration (Google Mobile Ads)
+  google_mobile_ads: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Assets for game (minimal - using code-generated colors)
+  assets:
+    - assets/sounds/
+    - assets/config/
+
+  # Custom Fonts
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
